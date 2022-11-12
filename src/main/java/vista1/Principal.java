@@ -49,7 +49,7 @@ import jugador_servicio.JugadorServicio;
      
      
      var jugador13 =new Jugador("Juan",80,173,LocalDate.of(2003,8,26));
-      var jugador14 =new Jugador("Pedro",56,160,LocalDate.of(2002,7,5));
+      var jugador14 =new Jugador("Pedro",56,160,LocalDate.of(2003,11,10));
        var jugador15 =new Jugador("Diego",70,180,LocalDate.of(2003,8,26));
      var basedeDatos=new JugadorServicio();
      basedeDatos.crear(jugador13);

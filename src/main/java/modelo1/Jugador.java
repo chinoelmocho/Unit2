@@ -29,13 +29,13 @@ public class Jugador {
     var deiActual=LocalDate.now().getDayOfMonth();
     var plan= monthActual-this.Fechadenacimeinto.getMonthValue();
     var soso= deiActual-this.Fechadenacimeinto.getDayOfMonth();
-    if (plan>0){    
+    if (plan<0){    
      retorno-=1;
         
     }
     if (plan==0){    
-     if(soso<0);
-     retorno-=1;
+     if(soso<0){
+     retorno-=1;}
         
     }
        
@@ -71,7 +71,7 @@ public class Jugador {
 
     @Override
     public String toString() {
-        return "Jugador{" + "nombre=" + nombre + ", peso=" + peso + ", estatura=" + estatura + ", Fechadenacimeinto=" + Fechadenacimeinto + '}';
+        return "Jugador{" + "nombre=" + nombre + ", peso=" + peso + ", estatura=" + estatura + ", Fechadenacimeinto=" + Fechadenacimeinto + '}'+", Edad Actual"+this.Calcularedad();
     }
 
     
